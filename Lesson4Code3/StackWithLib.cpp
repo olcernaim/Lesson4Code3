@@ -13,6 +13,14 @@ void DisplayList(stack<int> st)
 
 	cout << endl;
 }
+//Gokalp Added
+void NewDisplayList(stack<int> st)
+{
+	for (auto i = st._Get_container().rbegin(); i < st._Get_container().rend(); i++)
+	{
+		cout << *i << ",";
+	}
+}
 
 int main()
 {
@@ -31,6 +39,6 @@ int main()
 	cout << "Stack count is : " << st.size() << endl;
 	cout << "Is Stack empty : " << st.empty() << endl;
 
-
+	NewDisplayList(st);
 	//ListeyiGoster();
 }
